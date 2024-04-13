@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: vps-test-2
+    image: vps-test-2
+    build:
+      context: .
+    volumes:
+      - ./src:/app/src
+    ports:
+      - '3003:3003'
